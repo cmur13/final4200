@@ -1,0 +1,207 @@
+// example: user wins
+Would you like to go first? (y/n): y
+How long should the computer think about its moves (in seconds)? 5
+  1 2 3 4 5 6 7 8   Player vs. Opponent
+A - - - - - - - -
+B - - - - - - - -
+C - - - - - - - -
+D - - - - - - - -
+E - - - - - - - -
+F - - - - - - - -
+G - - - - - - - -
+H - - - - - - - -
+
+Choose your next move: d4
+
+  1 2 3 4 5 6 7 8   Player vs. Opponent
+A - - - - - - - -     1. D4
+B - - - - - - - -
+C - - - - - - - -
+D - - - O - - - -
+E - - - - - - - -
+F - - - - - - - -
+G - - - - - - - -
+H - - - - - - - -
+
+Solution found
+Optimal move found in: 5.000 Seconds
+
+  1 2 3 4 5 6 7 8   Player vs. Opponent
+A - - - - - - - -     1. D4 D5
+B - - - - - - - -
+C - - - - - - - -
+D - - - O X - - -
+E - - - - - - - -
+F - - - - - - - -
+G - - - - - - - -
+H - - - - - - - -
+
+Choose your next move: c4
+
+  1 2 3 4 5 6 7 8   Player vs. Opponent
+A - - - - - - - -     1. D4 D5
+B - - - - - - - -     2. C4
+C - - - O - - - -
+D - - - O X - - -
+E - - - - - - - -
+F - - - - - - - -
+G - - - - - - - -
+H - - - - - - - -
+
+Optimal move found in: 0.940 Seconds
+
+  1 2 3 4 5 6 7 8   Player vs. Opponent
+A - - - - - - - -     1. D4 D5
+B - - - - - - - -     2. C4 E3
+C - - - O - - - -
+D - - - O X - - -
+E - - X - - - - -
+F - - - - - - - -
+G - - - - - - - -
+H - - - - - - - -
+
+Choose your next move: e4
+
+  1 2 3 4 5 6 7 8   Player vs. Opponent
+A - - - - - - - -     1. D4 D5
+B - - - - - - - -     2. C4 E3
+C - - - O - - - -     3. E4
+D - - - O X - - -
+E - - X O - - - -
+F - - - - - - - -
+G - - - - - - - -
+H - - - - - - - -
+
+Optimal move found in: 0.005 Seconds
+
+  1 2 3 4 5 6 7 8   Player vs. Opponent
+A - - - - - - - -     1. D4 D5
+B - - - X - - - -     2. C4 E3
+C - - - O - - - -     3. E4 B4
+D - - - O X - - -
+E - - X O - - - -
+F - - - - - - - -
+G - - - - - - - -
+H - - - - - - - -
+
+Choose your next move: f4
+
+  1 2 3 4 5 6 7 8   Player vs. Opponent
+A - - - - - - - -     1. D4 D5
+B - - - X - - - -     2. C4 E3
+C - - - O - - - -     3. E4 B4
+D - - - O X - - -     4. F4
+E - - X O - - - -
+F - - - O - - - -
+G - - - - - - - -
+H - - - - - - - -
+
+Player wins!
+Game Over!
+
+// example: computer wins
+Play again? (y/n): y
+Would you like to go first? (y/n): n
+How long should the computer think about its moves (in seconds)? 5
+  1 2 3 4 5 6 7 8   Opponent vs. Player
+A - - - - - - - -
+B - - - - - - - -
+C - - - - - - - -
+D - - - - - - - -
+E - - - - - - - -
+F - - - - - - - -
+G - - - - - - - -
+H - - - - - - - -
+
+Solution found
+Optimal move found in: 5.000 Seconds
+
+  1 2 3 4 5 6 7 8   Opponent vs. Player
+A - - - - - - - -     1. D4
+B - - - - - - - -
+C - - - - - - - -
+D - - - X - - - -
+E - - - - - - - -
+F - - - - - - - -
+G - - - - - - - -
+H - - - - - - - -
+
+Choose your next move: b2
+
+  1 2 3 4 5 6 7 8   Opponent vs. Player
+A - - - - - - - -     1. D4 B2
+B - O - - - - - -
+C - - - - - - - -
+D - - - X - - - -
+E - - - - - - - -
+F - - - - - - - -
+G - - - - - - - -
+H - - - - - - - -
+
+Solution found
+Optimal move found in: 5.000 Seconds
+
+  1 2 3 4 5 6 7 8   Opponent vs. Player
+A - - - - - - - -     1. D4 B2
+B - O - - - - - -     2. D6
+C - - - - - - - -
+D - - - X - X - -
+E - - - - - - - -
+F - - - - - - - -
+G - - - - - - - -
+H - - - - - - - -
+
+Choose your next move: c2
+
+  1 2 3 4 5 6 7 8   Opponent vs. Player
+A - - - - - - - -     1. D4 B2
+B - O - - - - - -     2. D6 C2
+C - O - - - - - -
+D - - - X - X - -
+E - - - - - - - -
+F - - - - - - - -
+G - - - - - - - -
+H - - - - - - - -
+
+Optimal move found in: 0.000 Seconds
+
+  1 2 3 4 5 6 7 8   Opponent vs. Player
+A - - - - - - - -     1. D4 B2
+B - O - - - - - -     2. D6 C2
+C - O - - - - - -     3. D5
+D - - - X X X - -
+E - - - - - - - -
+F - - - - - - - -
+G - - - - - - - -
+H - - - - - - - -
+
+Choose your next move: d3
+
+  1 2 3 4 5 6 7 8   Opponent vs. Player
+A - - - - - - - -     1. D4 B2
+B - O - - - - - -     2. D6 C2
+C - O - - - - - -     3. D5 D3
+D - - O X X X - -
+E - - - - - - - -
+F - - - - - - - -
+G - - - - - - - -
+H - - - - - - - -
+
+Optimal move found in: 0.001 Seconds
+
+  1 2 3 4 5 6 7 8   Opponent vs. Player
+A - - - - - - - -     1. D4 B2
+B - O - - - - - -     2. D6 C2
+C - O - - - - - -     3. D5 D3
+D - - O X X X X -     4. D7
+E - - - - - - - -
+F - - - - - - - -
+G - - - - - - - -
+H - - - - - - - -
+
+Computer wins!
+Game Over!
+
+Play again? (y/n): n
+
+Process finished with exit code 0
