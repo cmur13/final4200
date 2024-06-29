@@ -55,7 +55,7 @@ public class Main
             while (!board.currentState.hasWinner()) {
                 if (computerStarts) {
                     // get the computer's move
-                    Move computerMove = getComputerMove();
+                    Position computerMove = getComputerMove();
                     board.currentState.gameBoard[computerMove.row - 1][computerMove.column - 1] = 1;
                     board.recordMove(computerMove);
 
@@ -65,7 +65,7 @@ public class Main
                         break;
                     }
                 } else if (!board.currentState.isEmpty()) {
-                    Move computerMove = getComputerMove();
+                    Position computerMove = getComputerMove();
                     board.currentState.gameBoard[computerMove.row - 1][computerMove.column - 1] = 1;
                     board.recordMove(computerMove);
 
@@ -78,7 +78,7 @@ public class Main
                 // get the player's move
                 int[] playerMove = getPlayerMove(board.currentState.gameBoard);
                 board.currentState.gameBoard[playerMove[0]][playerMove[1]] = 2;
-                board.recordMove(new Move(2, playerMove[0] + 1, playerMove[1] + 1));
+                board.recordMove(new Position(2, playerMove[0] + 1, playerMove[1] + 1));
                 board.displayBoard();
             }
 
@@ -150,7 +150,7 @@ public class Main
     }
 
     // finds the best option based for the computer's move
-    private static Move findBestOption()
+    private static Position findBestOption()
     {
         State bestOption = finalMoves.get(0).state;
         int bestPair = finalMoves.get(0).value;
@@ -168,7 +168,7 @@ public class Main
             }
         }
 
-        Move bestMove = board.currentState.getNextMove(bestOption);
+        Position bestMove = board.currentState.getNextMove(bestOption);
 
         return bestMove;
     }
@@ -267,7 +267,7 @@ public class Main
         return value;
     }
     // computes the computer's next move by searching the game board
-    private static Move getComputerMove() {
+    private static Position getComputerMove() {
         search(board.currentState);
         return findBestOption();
     }

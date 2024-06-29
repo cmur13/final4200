@@ -1,12 +1,12 @@
 // this class represents a move (position) on the game board
-public class Move
+public class Position
 {
     private int marker; // computer =1, player = 2
     int row;
     int column;
 
     // constructs a new Move object
-    public Move(int marker, int row, int column)
+    public Position(int marker, int row, int column)
     {
         this.marker = marker;
         this.row = row;

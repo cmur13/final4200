@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Board
 {
-    private ArrayList<Move> moveHistory = new ArrayList<>(); // stores the history of moves
+    private ArrayList<Position> moveHistory = new ArrayList<>(); // stores the history of moves
     public State currentState = new State();
     private boolean isComputerFirst;
 
@@ -127,7 +127,7 @@ public class Board
     }
 
     // if any moves are added, it records a move in the move history
-    public void recordMove(Move move)
+    public void recordMove(Position move)
     {
         moveHistory.add(move);
     }

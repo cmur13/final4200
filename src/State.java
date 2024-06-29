@@ -191,13 +191,13 @@ public class State {
     }
 
     // returns the next move based on the provided next state
-    public Move getNextMove(State next) {
+    public Position getNextMove(State next) {
         for (int row = 0; row < 8; row++) {
             for (int column = 0; column < 8; column++) {
                 int currentSpace = gameBoard[row][column];
 
                 if (currentSpace == 0 && next.gameBoard[row][column] == 1)
-                    return new Move(1, row + 1, column + 1);
+                    return new Position(1, row + 1, column + 1);
             }
         }
         return null; // no valid move found
